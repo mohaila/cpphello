@@ -1,0 +1,1 @@
+Simple C++ project to test local Gitlab-CI installation on fedora 27

@@ -1,0 +1,17 @@
+before_script:
+  - gcc -v
+
+after_script:
+  - ../build/cpphello
+
+stages:
+  - build
+
+job1:
+  stage: build
+  script:
+    - cd ..
+    - mkdir -p build
+    - cd build
+    - cmake ../cpphello
+    - make
